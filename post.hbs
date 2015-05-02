@@ -1,0 +1,24 @@
+{{!< default}}
+{{#post}}
+<div class="{{post_class}}">
+<article class="hentry" role="article">
+  <header><h1 class="entry-title">{{ title }}</h1></header>
+  
+  <div class="entry-content">{{ content }}</div>
+  <footer>
+    <p class="meta">
+      <span class="byline author vcard">Authored by <span class="fn">{{ author }}</span></span>
+      <time datetime="{{ date }}" pubdate>{{ date }}</time>
+      <span class="categories">{{tags}}</span>
+    </p>
+    <div class="sharing">
+      <a href="//twitter.com/share" class="twitter-share-button" data-url="{{ url }}" data-via="magikid" data-counturl="{{ url }}" >Tweet</a>
+    </div>
+
+    <p class="meta">
+      
+    </p>
+  </footer>
+</article>
+</div>
+{{/post}}

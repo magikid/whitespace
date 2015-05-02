@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>{{ meta_title }}</title>
+
+  <meta name="description" content="{{ meta_description }}">
+  <meta name="title" content="{{ meta_title }}">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="{{ @blog.url }}">
+  <link href="{{ asset 'css/screen.css' }}" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="{{ @blog.url }}/rss" rel="alternate" title="{{@blog.title}}" type="application/rss">
+  <script src="{{ asset 'js/modernizr-2.0.js' }}"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+  <!--- MathJax Configuration -->
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+ <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1219496-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  {{ghost_head}}
+</head>
+
+<body class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+  
+    <h2>{{@blog.description}}</h2>
+  
+</hgroup></header>
+  <nav role="navigation">
+<ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" title="subscribe via RSS"><i class="fa fa-2x fa-rss-square"></i></a></li>
+  
+    <li class="fix-email"><a href="/subscribe/index.html" title="subscribe via email"><i class="fa fa-2x fa-envelope-square"></i></a></li>
+  
+</ul>
+  
+  
+<ul class="subscription">
+  <li><a href="https://pinboard.in/u:magikid" title="Latest Pinboard Bookmarks" target="_blank"><i class="fa fa-2x fa-bookmark"></i></a></li>
+</ul>
+  
+  
+  
+  
+<ul class="subscription">
+  <li><a href="https://github.com/magikid" title="@magikid on GitHub" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
+</ul>
+  
+  
+<ul class="subscription">
+  <li><a href="https://gratipay.com/magikid" title="@magikid on Gratipay" target="_blank"><i class="fa fa-2x fa-gratipay"></i></a></li>
+</ul>
+  
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:christopherjones.us" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+  </nav>
+  <div id="main">
+    <div id="content">
+      {{{ body }}}
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Chris W Jones -
+  <span class="credit">Powered by Ghost</span>
+</p></footer>
+  {{ ghost_foot }}
+</body>
+</html>

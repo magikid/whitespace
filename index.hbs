@@ -1,0 +1,18 @@
+{{!< default}}
+<div class="blog-index">
+	{{#foreach posts}}
+	<article>
+                <header>
+                       <h1 class="entry-title"><a href="{{url}}">{{ title }}</a></h1>
+                       <p class="meta"><time datetime="{{date updated_at}}" pubdate data-updated="true">{{date update_at}}</time></p>
+                </header>
+		<div class="entry-content">{{ excerpt }}</div>
+		<footer>
+      <a rel="full-article" href="{{ url }}">Read More</a>
+    </footer>
+	</article>
+	{{/foreach}}
+	<div class="pagination">
+	{{pagination}}
+	</div>
+</div>
